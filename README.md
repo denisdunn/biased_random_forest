@@ -12,7 +12,7 @@ BIASED BAG: The paper designed the sampling for this biased bag to contain the f
 BUILDING BIASED RANDOM FOREST: Having to implement these ideas into a random forest model I had to build everything from scratch. Using code from https://machinelearningmastery.com/implement-random-forest-scratch-python/ I was able to achieve most of what I was looking to accomplish. I did have to code the biased bagging process into the forest and code the retrieval of the relevant information to calculate precision,recall, and confidence scores. The metrics used for this paper was an f1score and a gmeans score, but i also wanted to understand the PRC, ROC, AUROC, and AUPRC. 
 
 METRICS: After coding the model to return the predicted,actual and confidence scores. I was able to create precision recall curves, and receiver operator curves for the 10 fold cross validations and the test set. Using the confidence scores I created threshold scoring to calculate the AUPRC and the AUROC for the dataset. As you can see the AUROC is 25% and the AUPRC is 29%, Precision is 67% and Recall is 59%, which explains the model in fuller context.
-[!]https://github.com/denisdunn/biased_random_forest/blob/master/auprc_curve_cross_val.png
+![Screenshot](https://github.com/denisdunn/biased_random_forest/blob/master/auprc_curve_cross_val.png)
 
 
 CONCLUSION: When you tak into consideration that the model intentionally samples the very difficult (critical) areas, the precision and recall scores are pretty decent. My F1 score and the gmean scores came in at close to 64%. Below you can see the graphs of the AUPRC % AUROC.
