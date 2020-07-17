@@ -14,9 +14,11 @@ BUILDING BIASED RANDOM FOREST: Having to implement these ideas into a random for
 METRICS: After coding the model to return the predicted,actual and confidence scores. I was able to create precision recall curves, and receiver operator curves for the 10 fold cross validations and the test set. Using the confidence scores I created threshold scoring to calculate the AUPRC and the AUROC for the dataset. As you can see the AUROC is 25% and the AUPRC is 29%, Precision is 67% and Recall is 59%, which explains the model in fuller context.
 ![Screenshot](https://github.com/denisdunn/biased_random_forest/blob/master/auprc_curve_cross_val.png)
 ![Screenshot](https://github.com/denisdunn/biased_random_forest/blob/master/auprc_testset.png)
-
+![Screenshot](https://github.com/denisdunn/biased_random_forest/blob/master/auroc_curve_cross_val.png)
+![Screenshot](https://github.com/denisdunn/biased_random_forest/blob/master/auroc_curve_testset.png)
 
 CONCLUSION: When you tak into consideration that the model intentionally samples the very difficult (critical) areas, the precision and recall scores are pretty decent. My F1 score and the gmean scores came in at close to 64%. Below you can see the graphs of the AUPRC % AUROC.
+![Screenshot](https://github.com/denisdunn/biased_random_forest/blob/master/average_f1_gmean_scores.png)
 
 
 NEXT STEPS: I am going to work on imputing more advanced techniques to fill in the missing data. I also am going to add binary signal columns to see if the missing data in insulin and skin thickness is a signal of anything. Taking into consideration that this experiement and modeling is designed to test a class imbalance technique, the impuation of missing data could potential have big effects on the sampling.
